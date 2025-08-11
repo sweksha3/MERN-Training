@@ -1,0 +1,54 @@
+body{
+    background: lightcoral;
+    text-align: center;
+}
+
+div{
+    background: lightgoldenrodyellow;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation: box 3s infinite alternate;
+    margin-left: 35%;
+}
+/* div:hover{
+    background: lightseagreen;
+    cursor: pointer;
+    border-radius: 50%;
+} */
+
+@keyframes box{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+    }
+}
+.mybox{
+    background: lightskyblue;
+    height: 100px;
+    width: 100px;
+    margin-left: 500px;
+    margin-top: 100px;
+    animation-name: hii;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+@keyframes hii{
+    0%{
+        transform: scale(1) rotate(0deg);
+        border-radius: 0%;
+    }
+    50%{
+        transform: scale(2) rotate(180deg);
+        border-radius: 50%;
+        background: lightsteelblue;
+    }
+    100%{
+        transform: scale(3) rotate(360deg);
+        border-radius: 0%;
+        background: lightgreen
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    background : lightsteelblue;
+    text-align : center;
+    font-family :'Times New Roman', Times, serif;
+}
+h1{
+    background : lightskyblue;
+    color : darkslateblue;
+}
+div{
+    background : lightseagreen; 
+    padding-top : 30px;
+    padding-bottom : 30px;
+}
+form{
+    background : lightseagreen;
+}
+input{
+    width : 200px;
+    border-radius : 20px;
+}
+button{
+    background : lightskyblue;
+    width : 150px;
+    border-radius : 20px;
+    margin-top : 20px;
+}

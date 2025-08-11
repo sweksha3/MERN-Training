@@ -1,0 +1,29 @@
+*{
+    background: rgb(148, 118, 118);
+    margin: 0;
+}
+.box-1{
+    height: 150px;
+    width: 150px;
+    background: lightsalmon;
+}
+.box-2{
+    height: 150px;
+    width: 150px;
+    background: lightgoldenrodyellow;
+    flex-grow: 2;
+}
+.box-3{
+    height: 150px;
+    width: 150px;
+    background: lightskyblue;
+    flex-shrink: 1;
+}
+.main{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid lightyellow;
+}

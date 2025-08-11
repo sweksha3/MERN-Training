@@ -1,0 +1,42 @@
+MONGO DB commands
+
+mongod --version
+DB --> collections --> Document
+mongosh
+
+show dbs = show all the dbs
+use db
+show collections
+db.collection.find()
+db.collection.insertOne({key : 'value'})  CREATE / POST
+db.collection.find() READ / GET
+db.collection.updateOne
+({ key : "value"},{$set : {key : "value"}}) UPDATE / PUT
+db.collection.deleteOne
+({ key : "value"}) DELETE
+
+db.collection.drop()
+db.dropDatabase()
+
+db.collection.countDocuments()
+db.collection.count()
+
+query n projection
+db.collection.find({},{_id:0})  0 == no and 1 == yes
+db.emp.find({},{_id:0,post :0}).sort({ salary : -1}) 1 == asc -1 == desc
+
+db.emp.find({},{_id:0,post :0}).sort({ salary : -1}).limit(3)
+db.emp.find({},{_id:0,post :0}).sort({ salary : -1}).limit(2).skip(1)
+
+db.emp.find({ key : "value"})
+db.emp.find({ name :{$ne: "Value"}})
+
+db.emp.find({ salary :{ $lt : num}})
+db.emp.find({ salary :{ $gt : num}})
+
+db.emp.find({ salary : { $gt : 25000, $lt: 50000}})
+db.emp.find({ salary : { $gt : 25000, $lt: 70000}, name : 'Anil'})
+db.emp.updateOne({ key : "value"},{$unset : { anyField : ""}})
+db.emp.updateMany({},{$rename : {"oldValue" : "newValue"}})
+db.emp.deleteMany({ anyValue : {$exists : true }})
+db.emp.find({ salary : { $gt : 25000, $lt: 70000}, name : 'Anil'},{_id:0})
