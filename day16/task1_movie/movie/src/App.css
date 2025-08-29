@@ -1,0 +1,32 @@
+.movie{
+    height: 250px;
+    background: linear-gradient(to right,rgb(239, 245, 129),rgb(245, 199, 129),rgb(227, 130, 190));    
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px;
+    max-width: 250px;
+    text-align: center;
+    display: inline-block;
+}
+.photo{
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+}
+body{
+    text-align: center;
+    color: brown;
+    font-family:sans-serif;
+   background: rgb(210, 247, 210);
+   
+}
+
+p{
+    background: lightcoral;
+    color: purple;
+}
+
+.title{
+    color: rgb(57, 31, 226);
+}

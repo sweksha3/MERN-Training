@@ -1,0 +1,29 @@
+body{
+  text-align: center;
+}
+
+.navbar{
+  background: lightseagreen;
+  margin-left: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.main{
+  background: lightseagreen
+}
+
+.navbar a{
+  color: darkslateblue;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: darkgoldenrod;
+}
+li{
+  font-size: 30px;
+  
+}
+
